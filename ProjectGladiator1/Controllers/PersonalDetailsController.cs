@@ -23,7 +23,7 @@ namespace ProjectGladiator1.Controllers
         {
             return Ok(context.PersonalDetails);
         }
-        [HttpPost("PersonalDetails")]
+        [HttpPost]
         public IActionResult perdetails(PersonalDetails personaldetails)
         {
             context.PersonalDetails.Add(personaldetails);
